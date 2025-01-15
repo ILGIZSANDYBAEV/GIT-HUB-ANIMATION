@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.animated-text{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    animation: move 2s infinite alternate;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
